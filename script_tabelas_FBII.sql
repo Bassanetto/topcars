@@ -1,6 +1,17 @@
 #create database bytesql;
 use bytesql;
 
+CREATE TABLE `clientes` (
+  `id_cliente` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(50) NOT NULL,
+  `cpf` varchar(20) DEFAULT NULL,
+  `sexo` varchar(10) DEFAULT NULL,
+  `endereco` varchar(150) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `telefone` varchar(40) DEFAULT NULL,
+  `cnh` varchar(30) DEFAULT NULL,
+  PRIMARY KEY (`id_cliente`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 CREATE TABLE `veiculo` (
   `id_veiculo` int NOT NULL AUTO_INCREMENT,
